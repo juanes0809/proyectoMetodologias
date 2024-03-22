@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "League Gothic", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    background-color: black;
+    position: fixed;
+    top: 0;
+}
+
+header nav {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1.5%;
+}
+
+header h1 a {
+    text-decoration: none;
+}
+
+header ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 88%;
+}
+
+header li {
+    text-decoration: none;
+    font-size: large;
+    color: ghostwhite;
+    list-style: none;
+    padding-right: 5%;
+}
+
+header nav,
+a,
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: ghostwhite;
+}
+
+header section {
+    display: flex;
+    width: 20%;
+    justify-content: flex-end;
+    padding-right: 1.5%;
+}
+
+header img {
+    width: 60%;
+}
+
+header img:hover {
+    filter: brightness(0.5);
+    transition: .1s;
+}
+
+.slider {
+    width: 100%;
+    padding-top: 4vh;
+}
+
+.slider img {
+    width: 100%;
+}
+
+#btnCategorias {
+    color: ghostwhite;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    width: 15%;
+    height: 100vh;
+    background-color: ghostwhite;
+    position: fixed;
+    left: 0;
+    top: 5;
+    transition: all ease 0.2s;
+}
+
+.desplegar {
+    transform: translate(-120%);
+}
+
+.categorias h2 {
+    background-color: black;
+    color: yellow;
+    width: 100%;
+    height: 5%;
+    top: 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.categorias div {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    width: 100%;
+    height: 95%;
+    align-items: first baseline;
+}
+
+.categorias a {
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+    color: black;
+    padding: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.categorias a:hover {
+    color: yellow;
+    background-color: black;
+    transition: 0.2s;
+}
+
+footer {
+    background-color: black;
+    color: ghostwhite;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.inicioSesion {
+    border-radius: 20px;
+    margin-top: -25vh;
+    margin-left: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0.409);
+}
+
+.inicioSesion h1 {
+    margin-bottom: 5%;
+}
+
+.inicioSesion p:nth-child(2) {
+    color: rgb(226, 3, 3);
+    font-weight: bold;
+    font-size: small;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.inicioSesion div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicioSesion input {
+    background-color: white;
+    border-radius: 10px;
+    border: gray solid 1px;
+    padding: 5%;
+    margin: 5%;
+}
+
+.inicioSesion button {
+    background-color: black;
+    border-radius: 10px;
+    border: 0;
+    padding: 2%;
+    padding-inline: 3%;
+    margin: 5%;
+    color: ghostwhite;
+    text-align: center;
+}
+
+.inicioSesion button:active {
+    background-color: rgb(37, 35, 35);
+    color: ghostwhite;
+}
+
+
+.producto{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.producto img{
+    width: 100%;
+    height: 100%;
+}
+.producto  h4{
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+   text-align: center;
+    display: none;
+    opacity: 0.8;
+    background-color: white;
+}
+.producto:hover h4{
+    display: block;
+}
+.fondoLogin{
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
